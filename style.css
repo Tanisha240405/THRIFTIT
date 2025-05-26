@@ -1,0 +1,145 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ html, body {
+      height: 100%;
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #f0f4f8;
+      color: rgb(236, 244, 244);
+    }
+
+    body {
+      display: flex;
+      flex-direction: column;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 40px;
+      background-color: brown;
+      color: beige;
+      box-shadow: 0 4px 6px rgb(12, 73, 73);
+      border-bottom: 5px solid white;
+      border-radius: 5px;
+    }
+
+    .logo-title {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .logo-title img {
+      height: 80px;
+      width: 80px;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+    }
+
+    nav a {
+      color: beige;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: whitesmoke;
+    }
+
+    .hero {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 60px 20px;
+      background: linear-gradient(135deg, brown, beige);
+      color: white;
+    }
+    .hero h1{
+        font-size: 5rem;
+        font-weight: bold;
+    }
+
+    .hero h2 {
+      font-size: 3rem;
+      margin-bottom: 20px;
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      margin-bottom: 30px;
+    }
+
+    .cta-button {
+      background: white;
+      color: brown;
+      padding: 12px 28px;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 1rem;
+      border-radius: 6px;
+      transition: background 0.3s, color 0.3s;
+    }
+
+    .cta-button:hover {
+      background: #2980b9;
+      color: white;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: brown;
+      color: white;
+    }
+
+    footer a {
+      color: beige;
+      text-decoration: none;
+      margin: 0 8px;
+      transition: color 0.3s;
+    }
+
+    footer a:hover {
+      color: #ecf0f1;
+    }
+
+    @media (max-width: 768px) {
+      header {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      nav ul {
+        flex-direction: column;
+        gap: 10px;
+        margin-top: 10px;
+      }
+    }
+
+    @media (min-width: 768px) {
+      .hero {
+        background: linear-gradient(135deg, red, pink);
+      }
+      header{
+        background-color: maroon;
+      }
+    }
+    .hero span{
+        color: saddlebrown;
+    }
